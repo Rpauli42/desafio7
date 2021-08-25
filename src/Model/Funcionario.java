@@ -14,6 +14,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public Funcionario(){
+
+    }
+
     public Integer getId() {
         return id;
     }

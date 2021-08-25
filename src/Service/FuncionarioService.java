@@ -28,7 +28,7 @@ public class FuncionarioService implements IService<Funcionario> {
         update.setString(1, funcionario.getNome());
         update.setString(2, funcionario.getCpf());
         update.setDouble(3, funcionario.getSalario());
-        update.setInt(5, funcionario.getId());
+        update.setInt(4, funcionario.getId());
         update.executeUpdate();
         conn.close();
 

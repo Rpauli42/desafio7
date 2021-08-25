@@ -16,7 +16,7 @@ public class FuncionarioRepository implements IRepository<Funcionario> {
     @Override
     public List<Funcionario> findAll() throws SQLException, ClassNotFoundException {
         Connection conn = ConnectionManager.getConnection();
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM folha_owner.funcionarios ");
+        PreparedStatement statement = conn.prepareStatement("SELECT * FROM folha_owner.funcionarios");
         ResultSet resultSet = null;
         resultSet = statement.executeQuery();
 
